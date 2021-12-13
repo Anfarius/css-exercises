@@ -33,6 +33,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -63,4 +64,35 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+/* SOLUTION */
+
+.modal {
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 20px;;
 }
